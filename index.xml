@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Some Content</title>
-      <link>http://127.0.0.1:1313/post/some-content/</link>
-      <pubDate>Thu, 17 Jun 2021 14:26:15 +0800</pubDate>
-      
-      <guid>http://127.0.0.1:1313/post/some-content/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Go_install</title>
       <link>http://127.0.0.1:1313/go/go_install/</link>
       <pubDate>Fri, 04 Jun 2021 16:44:35 +0800</pubDate>
