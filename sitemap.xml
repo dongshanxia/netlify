@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://127.0.0.1:1313/categories/</loc>
-    <lastmod>2021-07-29T10:15:04+08:00</lastmod>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/categories/linux/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/linux/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/tags/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/linux/deepin/vim/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
+  </url><url>
+    <loc>http://127.0.0.1:1313/tags/vim/</loc>
+    <lastmod>2021-08-06T12:25:18+08:00</lastmod>
   </url><url>
     <loc>http://127.0.0.1:1313/tags/certbot/</loc>
     <lastmod>2021-07-29T10:15:04+08:00</lastmod>
@@ -14,16 +32,10 @@
     <loc>http://127.0.0.1:1313/network/letusencrypt/</loc>
     <lastmod>2021-07-29T10:15:04+08:00</lastmod>
   </url><url>
-    <loc>http://127.0.0.1:1313/</loc>
-    <lastmod>2021-07-29T10:15:04+08:00</lastmod>
-  </url><url>
     <loc>http://127.0.0.1:1313/categories/network/</loc>
     <lastmod>2021-07-29T10:15:04+08:00</lastmod>
   </url><url>
     <loc>http://127.0.0.1:1313/network/</loc>
-    <lastmod>2021-07-29T10:15:04+08:00</lastmod>
-  </url><url>
-    <loc>http://127.0.0.1:1313/tags/</loc>
     <lastmod>2021-07-29T10:15:04+08:00</lastmod>
   </url><url>
     <loc>http://127.0.0.1:1313/categories/java/</loc>
@@ -61,12 +73,6 @@
   </url><url>
     <loc>http://127.0.0.1:1313/tags/install/</loc>
     <lastmod>2021-07-13T15:30:29+08:00</lastmod>
-  </url><url>
-    <loc>http://127.0.0.1:1313/categories/linux/</loc>
-    <lastmod>2021-07-07T16:58:26+08:00</lastmod>
-  </url><url>
-    <loc>http://127.0.0.1:1313/linux/</loc>
-    <lastmod>2021-07-07T16:58:26+08:00</lastmod>
   </url><url>
     <loc>http://127.0.0.1:1313/linux/parted/</loc>
     <lastmod>2021-07-07T16:58:26+08:00</lastmod>
