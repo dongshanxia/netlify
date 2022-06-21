@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>deepin</title>
     
 
 
@@ -363,369 +363,192 @@
         <div id="content">
 
             
+    <div class="container slideout-panel slideout-panel-left" id="mobile-panel">
+
+        <div id="post" class="post">
+            <article class="article-content"><hr/>
+<p>显示当前工作区窗口  super+W<br/>
+dbus-send --session --dest=com.deepin.wm --print-reply /com/deepin/wm com.deepin.wm.PerformAction int32:6</p>
+<p>--system<br/>
+将命令发向系统总线，也可使用--session<br/>
+--print-reply<br/>
+打印返回结果<br/>
+--dest=org.bluez<br/>
+服务名。用户可以用查询命令获得当前系统的所有服务名<br/>
+/org/bluez/audio<br/>
+对象名。由服务定义<br/>
+org.bluez.audio.Manager.CreateDevice<br/>
+object.interface.Method<br/>
+string:&#39;11:11:11:11:11&#39;<br/>
+参数。 类型:值 int32:123</p>
+<p>dbus-send --session --dest=com.deepin.wm --type=method_call --print-reply /com/deepin/wm org.freedesktop.DBus.ObjectManager.GetManagedObjects int32:6</p>
+<p>dbus-send --system --print-reply --type=method_call --dest=org.bluez / org.freedesktop.DBus.ObjectManager.GetManagedObjects</p>
+<p>调整屏幕亮度<br/>
+dbus-send --print-reply --dest=com.deepin.daemon.Display /com/deepin/daemon/Display com.deepin.daemon.Display.GetBrightness</p>
+<p>弹出控制中心<br/>
+dbus-send --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.Show</p>
+
+            </article>
+        </div>
 
 
-    
-    <div class="container main-container flex on-phone--column extended ">
-        <main class="main full-width">
-            <section class="article-list">
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-                                <div class="article-category">
-                                    
-                                        <a href="/categories/network">
-                                            network
-                                        </a>
-                                    
-                                </div>
-                                <h2 class="article-title">
-                                    <a href="/network/LetusEncrypt/">LetusEncrypt</a>
-                                </h2>
-                                <h7 class="article-subtitle" style="font-size: 0.5rem">
-                                    
-                                    统计 2805 字  预计读完 14 分钟
-                                </h7>
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-                                <div class="article-category">
-                                    
-                                        <a href="/categories/network">
-                                            network
-                                        </a>
-                                    
-                                </div>
-                                <h2 class="article-title">
-                                    <a href="/network/zerotier/">zerotier</a>
-                                </h2>
-                                <h7 class="article-subtitle" style="font-size: 0.5rem">
-                                    
-                                    统计 169 字  预计读完 1 分钟
-                                </h7>
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-                                <div class="article-category">
-                                    
-                                        <a href="/categories/vue">
-                                            vue
-                                        </a>
-                                    
-                                </div>
-                                <h2 class="article-title">
-                                    <a href="/node/npm/">npm</a>
-                                </h2>
-                                <h7 class="article-subtitle" style="font-size: 0.5rem">
-                                    
-                                    统计 413 字  预计读完 2 分钟
-                                </h7>
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-                                <div class="article-category">
-                                    
-                                        <a href="/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">
-                                            未分类
-                                        </a>
-                                    
-                                </div>
-                                <h2 class="article-title">
-                                    <a href="/other/picgo/">picgo</a>
-                                </h2>
-                                <h7 class="article-subtitle" style="font-size: 0.5rem">
-                                    
-                                    统计 771 字  预计读完 4 分钟
-                                </h7>
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-                                <div class="article-category">
-                                    
-                                </div>
-                                <h2 class="article-title">
-                                    <a href="//search/">search</a>
-                                </h2>
-                                <h7 class="article-subtitle" style="font-size: 0.5rem">
-                                    
-                                    统计 30 字  预计读完 1 分钟
-                                </h7>
-                            </div>
-                        </header>
-                    </article>
-                
-            </section>
+<div class="button-container">
+    <div class="catalog-button">
+        <button class="buttonStyle display-none" id="open" onclick="click_open()">开</button>
+        <button class="buttonStyle" id="close" onclick="click_close()">关</button>
+    </div>
+    <div id="table-of-contents">
+        
+    </div>
 
-    
-    <nav class='pagination'>
-        
-            
+</div>
+<script>
+    function click_open() {
+        console.log("打开")
+        $('#table-of-contents').show()
+        $('#close').show()
+        $('#open').hide()
 
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-
-            
-        
-            
-                <a class='page-link' href='/page/21/'>21</a>
-            
-        
-            
-                <a class='page-link' href='/page/22/'>22</a>
-            
-        
-            
-                <a class='page-link' href='/page/23/'>23</a>
-            
-        
-            
-                <span class='page-link current'>24</span>
-            
-        
-            
-                <a class='page-link' href='/page/25/'>25</a>
-            
-        
-            
-                <a class='page-link' href='/page/26/'>26</a>
-            
-        
-            
-                <a class='page-link' href='/page/27/'>27</a>
-            
-        
-    </nav>
-</main>
+    }
+    function click_close() {
+        console.log("关闭")
+        $('#table-of-contents').hide()
+        $('#open').show()
+        $('#close').hide()
+    }
+</script>
 
 
-        <aside class="sidebar right-sidebar sticky"><section class="widget archives">
-    <h2 class="widget-title section-title">分类</h2>
-    <div class="widget-archive--list">
-        <div class="archives-year">
+<style>
+    .button-container{
+        position: fixed;
+        border-radius: 4px;
+        right: 2%;
+        top: 12%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+         
+        background-color: #515151e1;
+        opacity: 0.8;
+        border: 6px solid rgba(255, 255, 81, 0.5);
+        z-index: 99;
+        align-items: flex-end;
+    }
+    .div-inline-block{
+        display: inline-block;
+    }
+    .catalog-button{
+    }
+
+    #tab-of-content-area{
+        float: right;
+        position: relative;
+        right: 24px;
+        top: -70px;
+        display: none;
+    }
+
+    #TableOfContents{
+        border-radius: 4px;
+        left:85%;
+        top:115px;
+        display: inline-block;
+        width: max-content;
+        width:-webkit-max-content;
+        width:-moz-max-content;
+        max-width: 600px;
+        padding: 0;
+        background-color: #515151e1;
+        border: 1px solid rgba(81, 81, 81, 0.1);
+        overflow:auto;
+        height: 750px;
+    }
+
+    #TableOfContents::-webkit-scrollbar {
+        display: none;
+    }
+
+    #TableOfContents ul{
+        font-size: 16px;
+        color: #fff;
+        padding-left:1px;
+        margin: 0px;
+    }
+
+    #TableOfContents ul a{
+        color: inherit;
+    }
+
+    #TableOfContents ul ul{
+        padding-left: 20px;
+        font-size: 14px;
+        color:#ddd;
+    }
+
+    #TableOfContents li{
+        padding: 5px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+
+
+</style>
+
+
+
+
+<div class="pageOut">
+
             
-                <a href="/categories/zxq/">
-                    <span class="year">zxq</span>
-                </a>
+                <div class="pageTop">
+                    <a class="" href=/linux/date%e5%91%bd%e4%bb%a4/>
+                        <button class="buttonStyle">上</button>
+                    </a>
+                </div>
             
-                <a href="/categories/study/">
-                    <span class="year">study</span>
-                </a>
+            <div class="pagePiddle"></div>
             
-                <a href="/categories/windows/">
-                    <span class="year">windows</span>
-                </a>
-            
-                <a href="/categories/my/">
-                    <span class="year">my</span>
-                </a>
-            
-                <a href="/categories/about/">
-                    <span class="year">about</span>
-                </a>
-            
-                <a href="/categories/gitlab/">
-                    <span class="year">gitlab</span>
-                </a>
-            
-                <a href="/categories/OpenSearch/">
-                    <span class="year">OpenSearch</span>
-                </a>
-            
-                <a href="/categories/linux/">
-                    <span class="year">linux</span>
-                </a>
-            
-                <a href="/categories/blog/">
-                    <span class="year">blog</span>
-                </a>
-            
-                <a href="/categories/">
-                    <span class="year">更多</span>
-                </a>
+                <div class="pageBottom">
+                    <a class="" href=/linux/deepin/vim/>
+                        <button class="buttonStyle">下</button>
+                    </a>
+                </div>
             
         </div>
     </div>
-</section><section class="widget tagCloud">
-    <h2 class="widget-title section-title">Tags</h2>
-    <div class="tagCloud-tags">
 
-        
-            <a href="/tags/k8s/" class="font_size_4">
-                k8s
-            </a>
-        
-            <a href="/tags/VMware/" class="font_size_4">
-                VMware
-            </a>
-        
-            <a href="/tags/%e6%ad%a6%e6%9e%97%e7%a7%98%e7%b1%8d/" class="font_size_4">
-                武林秘籍
-            </a>
-        
-            <a href="/tags/mssql/" class="font_size_4">
-                mssql
-            </a>
-        
-            <a href="/tags/leak/" class="font_size_4">
-                leak
-            </a>
-        
-            <a href="/tags/hive/" class="font_size_4">
-                hive
-            </a>
-        
-            <a href="/tags/%e6%8f%92%e4%bb%b6/" class="font_size_4">
-                插件
-            </a>
-        
-            <a href="/tags/java/" class="font_size_4">
-                java
-            </a>
-        
-            <a href="/tags/blog/" class="font_size_4">
-                blog
-            </a>
-        
-            <a href="/tags/dream/" class="font_size_4">
-                dream
-            </a>
-        
-            <a href="/tags/windows/" class="font_size_4">
-                windows
-            </a>
-        
-            <a href="/tags/%e8%99%9a%e6%8b%9f%e6%9c%ba/" class="font_size_4">
-                虚拟机
-            </a>
-        
-            <a href="/tags/service/" class="font_size_4">
-                service
-            </a>
-        
-            <a href="/tags/skywalking/" class="font_size_4">
-                skywalking
-            </a>
-        
-            <a href="/tags/tar/" class="font_size_4">
-                tar
-            </a>
-        
-            <a href="/tags/%e5%88%86%e5%8c%ba/" class="font_size_4">
-                分区
-            </a>
-        
-            <a href="/tags/%e8%b7%af%e7%94%b1/" class="font_size_4">
-                路由
-            </a>
-        
-            <a href="/tags/kafka/" class="font_size_4">
-                kafka
-            </a>
-        
-            <a href="/tags/config/" class="font_size_4">
-                config
-            </a>
-        
-            <a href="/tags/" class="font_size_4">
-                更多
-            </a>
-        
-    </div>
+    <style>
+        .pageTop,.pagePiddle,.pageBottom{
+            width: 100%;
+        }
+        .pagePiddle{
+            height: 1em;
+        }
 
-</section></aside>
+        .buttonStyle{
+            border-radius: 60%;
+        }
 
+        .pageOut {
+            position: fixed;
+            border-radius: 4px;
+            left: 2%;
+            top: 14%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+             
+            background-color: #515151e1;
+            background-image: linear-gradient(#513c1e 10%, #514411 10%, #515151e1 20%);  
+            opacity: 0.8;
+            border: 6px solid rgba(255, 255, 81, 0.5);
 
-    </div>
+            z-index: 99;
+        }
+    </style>
+
 
             
         </div>
