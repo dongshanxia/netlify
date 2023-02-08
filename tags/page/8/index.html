@@ -131,6 +131,7 @@
                     
                     
                    var url =  item.url.substr(1);
+                    var encodeUrl = encodeURIComponent(item.url);
                     $("#result").append(`
                         <article class="has-image">
                             <header class="article-header">
@@ -141,7 +142,7 @@
 
 
                             <h2 class="article-title">
-                            <a href=`+ "/"+item.url+` >`+item.name+`</a>
+                            <a href=`+ "/"+encodeUrl+` >`+item.name+`</a>
                             </h2>
                             <h7 class="article-subtitle" style="font-size: 0.5rem">
                             2021-12-20 统计 26 预计读完 1 分钟
@@ -384,7 +385,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/centos7/">centos7</a>
+                                    <a href="/tags/service/">service</a>
                                 </h2>
 
                             </div>
@@ -396,7 +397,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/k8s/">k8s</a>
+                                    <a href="/tags/npm%e5%ae%89%e8%a3%85/">npm安装</a>
                                 </h2>
 
                             </div>
@@ -408,7 +409,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/es/">es</a>
+                                    <a href="/tags/typora/">typora</a>
                                 </h2>
 
                             </div>
@@ -420,7 +421,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/linux/">linux</a>
+                                    <a href="/tags/hive/">hive</a>
                                 </h2>
 
                             </div>
@@ -432,7 +433,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/%e9%9d%a2%e8%af%95%e9%a2%98%e6%95%b4%e7%90%86/">面试题整理</a>
+                                    <a href="/tags/Chronyd/">Chronyd</a>
                                 </h2>
 
                             </div>
