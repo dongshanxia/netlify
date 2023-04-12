@@ -109,6 +109,7 @@
         $.ajax({
             type: "GET",
             url: " https://hugo.dongshanxia.top:35000/api/v3/zincSearch?name="+key+"&num="+currentPage,
+           
             dataType: "json",
             success: function (data) {
                 
@@ -145,6 +146,9 @@
                             <a href=`+ "/"+encodeUrl+` >`+item.name+`</a>
                             </h2>
                             <h7 class="article-subtitle" style="font-size: 0.5rem">
+                                `+item.full_name+`
+                            </h7>
+                            <h7 class="article-subtitle" style="font-size: 0.5rem">
                             2021-12-20 统计 26 预计读完 1 分钟
                         </h7>
                         </div>
@@ -178,7 +182,7 @@
     }
 
 
-    
+    // <header class="article-category">
     
     
     
@@ -373,12 +377,48 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">13 pages</h3>
+                <h3 class="section-count">14 pages</h3>
                 <h1 class="section-term">Tag</h1>
             </div>
         </div>
 
         <section class="article-list">
+                
+                    <article class="has-image">
+                        <header class="article-header">
+                            <div class="article-details">
+
+                                <h2 class="article-title">
+                                    <a href="/tags/oracle/">oracle</a>
+                                </h2>
+
+                            </div>
+                        </header>
+                    </article>
+                
+                    <article class="has-image">
+                        <header class="article-header">
+                            <div class="article-details">
+
+                                <h2 class="article-title">
+                                    <a href="/tags/http/">http</a>
+                                </h2>
+
+                            </div>
+                        </header>
+                    </article>
+                
+                    <article class="has-image">
+                        <header class="article-header">
+                            <div class="article-details">
+
+                                <h2 class="article-title">
+                                    <a href="/tags/pve/">pve</a>
+                                </h2>
+
+                            </div>
+                        </header>
+                    </article>
                 
                     <article class="has-image">
                         <header class="article-header">
@@ -397,43 +437,7 @@
                             <div class="article-details">
 
                                 <h2 class="article-title">
-                                    <a href="/tags/VMware/">VMware</a>
-                                </h2>
-
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-
-                                <h2 class="article-title">
-                                    <a href="/tags/java/">java</a>
-                                </h2>
-
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-
-                                <h2 class="article-title">
-                                    <a href="/tags/cluster/">cluster</a>
-                                </h2>
-
-                            </div>
-                        </header>
-                    </article>
-                
-                    <article class="has-image">
-                        <header class="article-header">
-                            <div class="article-details">
-
-                                <h2 class="article-title">
-                                    <a href="/tags/centos/">centos</a>
+                                    <a href="/tags/%e6%9c%aa%e6%a0%87%e7%ad%be/">未标签</a>
                                 </h2>
 
                             </div>
@@ -495,6 +499,10 @@
         
             
                 <span class='page-link current'>13</span>
+            
+        
+            
+                <a class='page-link' href='/tags/page/14/'>14</a>
             
         
     </nav>
